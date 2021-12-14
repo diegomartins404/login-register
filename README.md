@@ -1,2 +1,2 @@
 # login-register
-To show my knowledge in POO
+Um usuário cria sua conta fictícia (onde é inserido as informações de login no banco de dados) e depois é possível logar com essa conta (através de uma consulta sql). Ultilizei conceitos de grid layout e funcões de javascript para controlar o display de cada seção, nesse caso, a seção de cadastro e a de login. No PHP ultilizei conceitos de Programação orientada a objetos.
