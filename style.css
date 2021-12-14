@@ -1,0 +1,92 @@
+body{
+  background: #F925DB;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 24px;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main{
+
+  display: grid;
+  grid-template-rows: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: start;
+  justify-content: center;
+}
+
+.userphoto{
+  z-index: 1;
+  position: relative;
+  margin: 0 auto; 
+  border-radius: 50%;
+  border: 3px solid #000;  
+}
+.login{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.main > div{
+
+  background-color: #5121DB;
+  width: 500px; 
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #B721DB;
+  border-radius: 5px;
+  position: relative; 
+  bottom: 50px;
+}
+.main > div > div{
+  padding: 30px;
+}
+
+.main > div label{
+  display: block;
+  font-size: 0.8rem;
+}
+
+.main > div h1{
+  text-transform: uppercase;
+}
+
+.main > div h1::after{
+  display: block;
+  content: '';
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #000;
+}
+
+
+#inputtext{
+  margin-bottom: 10px;
+}
+
+#inputtext input{
+  width: 100%;
+}
+
+.btn{
+  background-color: #5121DB;
+  padding: 3px 9px;
+  border: 3px solid #000; 
+  font-weight: bold;
+}
+.btn:hover{
+  border-style: dashed;
+}
+
+.signup{
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+php:
+  image: 'php:7.4-apache'
+  container_name: php_image
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - C:\xampp\htdocs\login\php:/var/www/html
+  links:
+    - db
+
+db:
+  image: 'mysql:latest'
+  container_name: meumysql
+  ports: 
+    - "3307:3306"
+  volumes:
+    - /var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=root
+  
+
+

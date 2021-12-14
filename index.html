@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login or Register</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="main">
+
+    <img src="img/user.png" class="userphoto" alt="user photo">
+    <div class="login">
+      <div>
+        <h1>Log in</h1>
+        <form action="php/Login.php" method="post">
+          <div id="inputtext">
+            <label for="username">username</label>
+            <input id="username" name="username" type="text">
+          </div>
+          <div id="inputtext">
+            <label for="password">password</label>
+            <input type="text" name="password" id="password">
+          </div>
+          <input class="btn" type="submit" value="log in">
+        </form>
+      </div>
+      <div>
+        <p>don't have an account? <a href="#" onclick="changetosignup();">create one</a></p>
+      </div>
+    </div>
+
+
+    <div class="signup">
+      <div>
+        <h1>SIGN UP</h1>
+        <form action="php/InsertUsers.php" method="post">
+          <div id="inputtext">
+            <label for="username">username</label>
+            <input type="text" name="newusername">
+          </div>
+
+          <div id="inputtext">
+            <label for="birthdate">birth date</label>
+            <input type="date" name="newbirthdate" id="birthdate">
+          </div>
+
+          <div id="inputtext">
+            <label for="firstname">first name</label>
+            <input type="text" name="newfirstname" id="firstname">
+          </div>
+
+          <div id="inputtext">
+            <label for="password">password</label>
+            <input type="text" name="newpassword" id="password">
+          </div>
+
+          <input type="submit" class="btn" value="sign in">
+        </form>
+      </div>
+    
+
+      <div>
+        <p>already have an account? try <a href="#" onclick="changetologin()">log in</a></p>
+      </div>
+
+    </div>
+
+
+
+
+
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
